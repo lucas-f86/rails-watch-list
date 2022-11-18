@@ -1,11 +1,8 @@
-<h1>LISTS</h1>
-
+<h1>MY LISTS</h1>
+<%= button_to "+ add a new list", @list, method: :add %>
+<br>
 <ul>
   <% @lists.each do |list| %>
     <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
 </ul>
-
-
-
-<%= link_to "+ add new list", new_list_path  %>

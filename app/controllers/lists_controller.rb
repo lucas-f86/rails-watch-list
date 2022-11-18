@@ -1,11 +1,13 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: %i[show]
+  before_action :set_list, only: %i[show destroy]
 
   def index
     @lists = List.all
   end
 
-  def show; end
+  def show
+    @bookmark = Bookmark.new
+  end
 
   def new
     @list = List.new
@@ -19,6 +21,7 @@ class ListsController < ApplicationController
 
   def destroy
     @list.destroy
+    redirect_to lists_path, status: :see_other
   end
 
   private
