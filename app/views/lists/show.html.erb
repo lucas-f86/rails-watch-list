@@ -1,22 +1,22 @@
 <h1><%= @list.name %></h1>
 <div>
+  <%= link_to "+ add new movie", new_list_bookmark_path(@list)%>
   <br>
-  <ul class="list-group">
+  <ul class="list-group" >
     <% @list.bookmarks.each do |bookmark| %>
-      <li class="list-group-item">
-      <%= bookmark.movie.title %> |
-      <%= bookmark.comment %>
-      <%= link_to "Delete", bookmark_path(bookmark),
+      <li class="list-group-item" >
+        <%= bookmark.movie.title %> |
+        <%= bookmark.comment %>
+        <%= link_to "🗑 Remove movie", bookmark_path(bookmark),
           data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
       <% end %>
       </li>
   </ul>
-
+  <br>
   <%= button_to "Destroy this list", @list, method: :delete %>
   <br>
 
   <div>
-    <%= link_to "new bookmark", new_list_bookmark_path(@list)%>
     <br>
     <%= link_to "Back to lists", lists_path %>
   </div>

@@ -1,6 +1,6 @@
 .navbar-lewagon {
-  background: rgb(12,16,51);
-  background: linear-gradient(90deg, rgba(12,16,51,1) 7%, rgba(9,45,121,0.013743168165703756) 47%, rgba(30,126,209,1) 100%);
+  background: rgb(9,8,8);
+  background: linear-gradient(0deg, rgba(9,8,8,1) 0%, rgba(119,43,25,1) 45%, rgba(232,148,149,1) 100%);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -24,11 +24,19 @@
 }
 
 .nav-item:hover {
-  color: rgb(44, 157, 157);
-  background-color: rgba(110, 237, 237, 0.4);
-  box-shadow: 0 0 1em 0.25em rgba(110, 237, 237, 0.781), 0 0 4em 2em rgba(65, 243, 243, 0.781), inset 0 0 0.75em 0.25em rgb(147, 228, 228);
+  color: rgb(181, 86, 86);
+  background-color: rgba(154, 35, 37, 0.4);
+  box-shadow: 0 0 1em 0.25em rgba(237, 110, 110, 0.781), 0 0 4em 2em rgba(243, 65, 65, 0.781), inset 0 0 0.75em 0.25em rgb(228, 147, 148);
 }
 
 .nav-link {
-  color:  rgb(110, 237, 237);
+  // color:  rgb(110, 237, 237);
+  color:  rgb(197, 104, 104);
+}
+
+.navbar {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content:center;
 }

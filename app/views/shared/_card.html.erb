@@ -1,0 +1,5 @@
+<ul class="card-category">
+  <% @lists.each do |list| %>
+    <li class="card-large"><%= link_to list.name, list_path(list) %></li>
+  <% end %>
+</ul>
