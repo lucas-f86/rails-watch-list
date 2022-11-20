@@ -1,6 +1,6 @@
 .navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+  background: rgb(12,16,51);
+  background: linear-gradient(90deg, rgba(12,16,51,1) 7%, rgba(9,45,121,0.013743168165703756) 47%, rgba(30,126,209,1) 100%);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,4 +13,22 @@
 
 .logo {
   height: 50px ;
+  border-radius: 50%;
+}
+
+.nav-item {
+  font-size: 20px;
+  border-radius: 50%;
+  margin-left: 50px;
+  justify-content: space-around;
+}
+
+.nav-item:hover {
+  color: rgb(44, 157, 157);
+  background-color: rgba(110, 237, 237, 0.4);
+  box-shadow: 0 0 1em 0.25em rgba(110, 237, 237, 0.781), 0 0 4em 2em rgba(65, 243, 243, 0.781), inset 0 0 0.75em 0.25em rgb(147, 228, 228);
+}
+
+.nav-link {
+  color:  rgb(110, 237, 237);
 }
